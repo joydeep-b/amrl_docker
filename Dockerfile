@@ -6,7 +6,9 @@ RUN apt-get update && \
         libgoogle-glog-dev liblua5.1-0-dev \
         libboost-all-dev libqt5websockets5-dev \
         python-is-python3 libeigen3-dev sudo \
-        bash-completion vim screen tree python-is-python3 python3-pip psmisc
+        bash-completion vim screen tree python-is-python3 python3-pip psmisc \
+        inetutils-ping inetutils-telnet inetutils-traceroute inetutils-tools \
+        iproute2 links
 
 # install ros apt deps
 RUN apt-get install -y ros-noetic-tf ros-noetic-angles
